@@ -1,0 +1,147 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+
+  /* Acá steamos que se muestren 3 articulos por línea */
+  .products {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .product img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn-cart{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-cart:hover {
+    background-color: #1685fc;
+    color: #fff;
+  }
+  .card-img-top{
+    max-width:200px;
+    margin:auto;
+  }
+  
+  footer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+  }
+
+  .list-unstyled{
+    width: 130px;
+    margin: auto;
+  }
+  .form-inline{
+    display: flex;
+    column-gap: 10px;
+  }
+  .navbar-collapse{
+    justify-content: space-around;
+  }
+.dropdown-item:hover{
+  background-color: #80808066;
+}
+
+main > h2 {
+  margin-top:50px;
+  text-align: center;
+}
+main {
+  padding: 0px 50px
+}
+
+#filter-container{
+  display:flex;
+  column-gap:20px;
+}
+.cont-pag{
+  margin-top:50px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+#navbarNav {
+  justify-content: end;
+}
+
+/* Acá le damos la altura del texto de del articulo */
+.card-text {
+  height: 250px;   /* altura */
+  overflow-y: hidden;
+}
+
+/* Acá la damos la altura a las imagenes */
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* Acá damos el tamñao al título del artículo */
+.card-title {
+  height: 24px;
+  overflow-y: hidden;
+}
+
+#cant-prod-carr {
+  color: white;
+}
+  
+#cart-container {
+  align-items: center;
+  display: flex;
+}
